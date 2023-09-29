@@ -1,5 +1,5 @@
 # dSlider
-<h3>Full Featured Lightweight Responsive Slider/Carousel with Pure JS - dSlider</h3>
+<h3>Full Featured Lightweight Responsive Slider/Carousel with Pure JS</h3>
 dSlider is a versatile and customizable slider library that empowers you to create captivating image sliders for your website. It offers a wide range of options and configurations to make your content shine.
 <br><br>
 dSlider offers versatile functionality, serving as both a slider and a carousel. 
