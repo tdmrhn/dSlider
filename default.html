@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dSlider Lightweight Vanilla JS Responsive Slider/Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dSlider.css">
+	<script src="dSlider-0.5.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <p class="sub">Experience Stunning Sliders</p>
+    <h1>dSlider</h1>
+    <p class="slo">Full Featured Lightweight Responsive Slider/Carousel with Pure JS</p>
+    <p>dSlider is a versatile and customizable slider library that empowers you to create captivating image sliders for your website. It offers a wide range of options and configurations to make your content shine.</p>
+  </div>
+
+  <div class="slider-container container">
+    <h2>Simple Slider</h2>
+    <div class="dslider" id="dSlider-simple">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-simple',
+  });
+});</p>
+  </div>
+  
+  <div class="slider-container container">
+    <h2>Fade Slider</h2>
+    <div class="dslider" id="dSlider-fade">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-fade',
+    sliderStyle: "fade", // default: slide
+  });
+});</p>
+  </div>
+  
+  <div class="slider-container container">
+    <h2>Simple Carousel</h2>
+    <div class="dslider" id="dSlider-carousel">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-carousel',
+    responsiveSlides: { 
+      0: 3 
+    }, // default: 1
+    gap: 2  // default: 0
+  });
+});</p>
+  </div>
+
+  <div class="slider-container container">
+    <h2>Responsive Carousel</h2>
+    <div class="dslider" id="dSlider-responsive">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-responsive',
+    responsiveSlides: { 
+      1200: 3,
+      800: 2,
+      0: 1 
+    }, // default: 1
+    gap: 2  // default: 0
+  });
+});</p>
+  </div>
+  
+  <div class="slider-container container">
+    <h2>Responsive Non-Loop Carousel</h2>
+    <div class="dslider" id="dSlider-end">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-end',
+    responsiveSlides: { 
+      1200: 3,
+      800: 2,
+      0: 1 
+    }, // default: 1
+    infiniteLoop: false, // default: true
+    gap: 2  // default: 0
+  });
+});</p>
+  </div>
+  
+  <div class="slider-container container">
+    <h2>Responsive RTL Carousel</h2>
+    <div class="dslider" id="dSlider-rtl">
+      <div class="slides">
+        <div><img src="https://picsum.photos/id/239/1920/800"></div>
+        <div><img src="https://picsum.photos/id/250/1920/800"></div>
+        <div><img src="https://picsum.photos/id/247/1920/800"></div>
+        <div><img src="https://picsum.photos/id/230/1920/800"></div>
+        <div><img src="https://picsum.photos/id/235/1920/800"></div>
+      </div>
+    </div>
+
+    <p class="code">document.addEventListener("DOMContentLoaded", function() {
+  dSlider({
+    sliderID: 'dSlider-rtl',
+    responsiveSlides: { 
+      1200: 3,
+      800: 2,
+      0: 1 
+    }, // default: 1
+    gap: 2,  // default: 0
+    sliderRTL: true // default: false
+  });
+});</p>
+  </div>
+  
+  <div class="slider-container container">
+  <h2>Variable Documentation</h2>
+  <table>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+      <th>Default Value</th>
+      <th>Possible Values</th>
+    </tr>
+    <tr>
+      <td>sliderID</td>
+      <td>ID of the slider</td>
+      <td>dSlider</td>
+      <td>Unique String</td>
+    </tr>
+    <tr>
+      <td>autoPlay</td>
+      <td>Enable auto-play</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>autoPlayTime</td>
+      <td>Time interval between slides during auto-play (in milliseconds)</td>
+      <td>4000</td>
+      <td>Any positive integer</td>
+    </tr>
+    <tr>
+      <td>autoPlaySpeed</td>
+      <td>Speed of slide transitions during auto-play (in milliseconds)</td>
+      <td>800</td>
+      <td>Any positive integer</td>
+    </tr>
+    <tr>
+      <td>autoPlayHoverStop</td>
+      <td>Stop auto-play on hover</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>infiniteLoop</td>
+      <td>Enable infinite loop</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>sliderDots</td>
+      <td>Show slider navigation dots</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>sliderNav</td>
+      <td>Show slider navigation arrows</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>sliderStyle</td>
+      <td>Slider transition style</td>
+      <td>slide</td>
+      <td>slide, fade</td>
+    </tr>
+    <tr>
+      <td>responsiveSlides</td>
+      <td>Number of slides to show at different screen widths (breakpoints)</td>
+      <td>{ }</td>
+      <td>Object with key-value pairs<br>Ex: 1200: 4, 1000: 3, 600: 2, 0: 1</td>
+    </tr>
+    <tr>
+      <td>sliderTouch</td>
+      <td>Enable touch events for slider</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>sliderSwipe</td>
+      <td>Enable swipe gestures for slider</td>
+      <td>true</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>sliderSwipeThreshold</td>
+      <td>Minimum swipe distance to trigger a slide change (in pixels)</td>
+      <td>50</td>
+      <td>Any positive integer</td>
+    </tr>
+    <tr>
+      <td>sliderFadeSpeed</td>
+      <td>Speed of fade transitions (in milliseconds)</td>
+      <td>300</td>
+      <td>Any positive integer</td>
+    </tr>
+    <tr>
+      <td>sliderGap</td>
+      <td>Gap between slides (in pixels)</td>
+      <td>0</td>
+      <td>Any positive integer</td>
+    </tr>
+    <tr>
+      <td>sliderRTL</td>
+      <td>Enable right-to-left (RTL) slider direction</td>
+      <td>false</td>
+      <td>true, false</td>
+    </tr>
+  </table>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      dSlider({
+        sliderID: 'dSlider-simple',        
+      });
+      
+      dSlider({
+        sliderID: 'dSlider-fade',
+    sliderStyle: "fade", // default slide,        
+      });
+      
+      dSlider({
+        sliderID: 'dSlider-carousel',
+      responsiveSlides: { 
+        0: 3 
+      },
+      sliderGap: 2      
+      });
+      
+      
+      dSlider({
+        sliderID: 'dSlider-carousel',
+      responsiveSlides: { 
+        0: 3 
+      },
+      sliderGap: 2      
+      });
+      
+      dSlider({
+        sliderID: 'dSlider-end',
+    responsiveSlides: { 
+      1200: 3,
+      800: 2,
+      0: 1 
+    },
+        infiniteLoop: false,
+      sliderGap: 2    
+      });  
+        
+      dSlider({
+        sliderID: 'dSlider-rtl',
+    responsiveSlides: { 
+      1200: 3,
+      800: 2,
+      0: 1 
+    },
+      sliderGap: 2,        
+    sliderRTL: true
+      });
+    
+    });
+  </script>
+</body>
+
+</html>
