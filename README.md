@@ -3,14 +3,13 @@
 <br><br>
 dSlider is a versatile and customizable slider library that empowers you to create captivating image sliders for your website. It offers a wide range of options and configurations to make your content shine.
 <br><br>
-<br>
 dSlider offers versatile functionality, serving as both a slider and a carousel. 
 <br>
 You have the flexibility to choose between slide and fade transitions. 
 <br><br>
 DSlider comes equipped with a rich feature set, including support for multiple sliders, autoplay, infinite looping with responsive calculations, navigation controls, arrow buttons, fade effects, touch and swipe gestures, gap customization, right-to-left (RTL) support, and responsive breakpoints, among others.
 <br><br>
-https://codepen.io/dmrhn/pen/vYvWrWr
+<a href="https://codepen.io/dmrhn/pen/vYvWrWr" target=_blank>Codepen Live Demo</a>
 <br><br>
 <h2>Variable Documentation</h2>
   <table>
